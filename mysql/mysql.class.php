@@ -10,7 +10,7 @@ class mysql{
     function connectDb(){
         $host="localhost";
         $userName="iistand";
-        $passWord="546647867";
+        $passWord="123456";
         $dataBase="mysql_speed_test";
         $conn=mysqli_connect($host,$userName,$passWord,$dataBase,'3306');
         return $conn;
