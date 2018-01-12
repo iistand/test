@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f439eeb8-bb56-4f85-9193-8e736a1f8890" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/insert.php" afterPath="$PROJECT_DIR$/insert.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/mysql.class.php" afterPath="$PROJECT_DIR$/mysql/mysql.class.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,9 +18,12 @@
       <file leaf-file-name="insert.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/insert.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-              <folding />
+            <state relative-caret-position="324">
+              <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+              <folding>
+                <marker date="1515750473042" expanded="true" signature="234:270" ph="insert into user_speed_test... " />
+                <marker date="1515750473042" expanded="true" signature="234:292" ph="insert into user_speed_test... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -26,8 +31,8 @@
       <file leaf-file-name="mysql.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysql/mysql.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+            <state relative-caret-position="243">
+              <caret line="14" column="73" lean-forward="false" selection-start-line="14" selection-start-column="73" selection-end-line="14" selection-end-column="73" />
               <folding />
             </state>
           </provider>
@@ -123,12 +128,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1515745269171</updated>
-      <workItem from="1515745271328" duration="3144000" />
+      <workItem from="1515745271328" duration="4687000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3144000" />
+    <option name="totallyTimeSpent" value="4687000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -166,17 +171,20 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/mysql/mysql.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        <state relative-caret-position="243">
+          <caret line="14" column="73" lean-forward="false" selection-start-line="14" selection-start-column="73" selection-end-line="14" selection-end-column="73" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/insert.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="324">
+          <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <folding>
+            <marker date="1515750473042" expanded="true" signature="234:270" ph="insert into user_speed_test... " />
+            <marker date="1515750473042" expanded="true" signature="234:292" ph="insert into user_speed_test... " />
+          </folding>
         </state>
       </provider>
     </entry>
