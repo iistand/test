@@ -16,7 +16,7 @@ class mysql{
     }
 
     private static function connectDb($connect_db){
-        $host="localhost";
+        $host="127.0.0.1";
         $userName="root";
         $passWord="root";
 

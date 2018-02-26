@@ -11,9 +11,6 @@ class indexControl{
     }
 
     public function api(){
-        return '123';
-        exit;
-
         require_once "mysql/mysql.class.php";
         $mysql=mysql::newDb();
 
