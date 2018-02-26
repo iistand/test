@@ -18,7 +18,7 @@ class mysql{
     private static function connectDb($connect_db){
         $host="127.0.0.1";
         $userName="root";
-        $passWord="root";
+        $passWord="123456";
 
         @$conn=mysqli_connect($host,$userName,$passWord,$connect_db);
         if($conn){
