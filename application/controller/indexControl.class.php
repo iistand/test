@@ -7,7 +7,7 @@
  */
 class indexControl{
     public function index(){
-        return "hello world ,different";
+        return "hello world ,different !";
     }
 
     public function api(){
