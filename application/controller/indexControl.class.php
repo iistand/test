@@ -11,9 +11,9 @@ class indexControl{
     }
 
     public function api(){
+
         require_once "mysql/mysql.class.php";
         $mysql=mysql::newDb();
-
         $sql='select * from user_speed_test where id>42';
         $result=$mysql->select($sql);
         $result=json_encode($result);
