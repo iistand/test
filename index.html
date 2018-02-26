@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<br>
+<p onclick="test()" id="test">这是测试按钮</p>
+<br>
+<p onclick="api()" id="api">测试返回数据</p>
+<br>
+
+</body>
+</html>
+<script type="application/javascript" src="tool/jquery-3.3.1.min.js"></script>
+<script>
+    function test(){
+
+        $.ajax({
+            url:"route.php",
+            method:'post',
+            data:{
+                control:'index',
+                action:'index'
+            },
+            success:function(res){
+                console.log(res);
+            }
+        })
+
+        //4个参数，第一个路径url，第二个传递的数据data，第三个function，第四个数据格式，一般json
+        /*$.post('route.php',{
+            control:'index',
+            action:'index'
+        },function(result){
+            console.log(result);
+        },'json');
+        return;*/
+    }
+    function api(){
+        $.ajax({
+            url:"route.php",
+            method:'post',
+            data:{
+                control:'index',
+                action:'api'
+            },
+            success:function(res){
+                console.log(res);
+            }
+        })
+    }
+
+</script>
