@@ -1,19 +1,43 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+<script src="tool/vue.js"></script>
+<style>
+    .class1{
+        background-color: deeppink;
+        font-size: 18px;
+    }
+</style>
+<body>
+<div id="vue">
+    <p>{{message}}</p>
+</div>
+<div id="app">
+    <div v-html="message"></div>
+</div>
 <br>
 <p onclick="test()" id="test">这是测试按钮</p>
 <br>
 <p onclick="api()" id="api">测试返回数据</p>
 <br>
+<div id="changeC">
+    <p>变色按钮</p><input type="checkbox" v-model="class1">
+    <br>
+    <div v-bind:class="{'class1':class1}">
+        点上面那个会变色
+    </div>
+</div>
+
 
 </body>
 </html>
 <script type="application/javascript" src="tool/jquery-3.3.1.min.js"></script>
 <script>
+    var vue='hello vue';
     function test(){
 
         $.ajax({
@@ -24,9 +48,10 @@
                 action:'index'
             },
             success:function(res){
+
                 console.log(res);
             }
-        })
+        },'json');
 
         //4个参数，第一个路径url，第二个传递的数据data，第三个function，第四个数据格式，一般json
         /*$.post('route.php',{
@@ -46,9 +71,31 @@
                 action:'api'
             },
             success:function(res){
-                console.log(res);
+                /*res=JSON.parse(res);
+                console.log(res[0]['datetime']);*/
+                res=JSON.parse(res);
+                vue=res[0]['datetime'];
+                new Vue({
+                    el:'#vue',
+                    data:{
+                        message:vue
+                    }
+                })
             }
-        })
+        },'json')
     }
+
+    new Vue({
+        el:'#app',
+        data:{
+            message:'hello gay'
+        }
+    });
+    new Vue({
+        el:'#changeC',
+        data:{
+            class1:false
+        }
+    })
 
 </script>
